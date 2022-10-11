@@ -1,6 +1,3 @@
-import string
-from unittest import result
-
 
 '''
 Homework 3.1  COEN 279
