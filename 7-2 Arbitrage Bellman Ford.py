@@ -1,32 +1,16 @@
-#check if arbitrage exists
-#Bellman Ford algorithm
-#O(n^3) time complexity
-#O(n) space complexity
-
 def arbitrageBellmanFord(graph):
-    #initialize the distance array
     dist = [0] * len(graph)
-    #initialize the parent array
     parent = [None] * len(graph)
-    #initialize the source vertex
     source = 0
-    #initialize the destination vertex
     destination = None
-    #initialize the number of vertices
     n = len(graph)
-    #initialize the number of edges
     m = n * n
-    #initialize the number of iterations
     k = n - 1
-    #initialize the path array
     path = []
-    #initialize the cycle array
     cycle = []
 
-    #set the source vertex
     dist[source] = 1
 
-    #relax the edges
     for i in range(k):
         for u in range(n):
             for v in range(n):
