@@ -55,9 +55,9 @@ def arbitrageBellmanFord(graph):
 if __name__ == "__main__":
     #initialize the graph
     graphUSDRupeeYen = [
-        [1, 64, 0],
-        [0, 1, 1.8],
-        [0.009, 0, 1]
+        [1, 64, 0.0001],
+        [0.0001, 1, 1.8],
+        [0.009, 0.0001, 1]
     ]
     #find arbitrage
     arbitrageBellmanFord(graphUSDRupeeYen)
